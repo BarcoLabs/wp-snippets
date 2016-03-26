@@ -1,5 +1,4 @@
 (function() {
-	var $ = window.jQuery
 
 	var CONFIG = {
 		// Title to appear on the left of the nav items
@@ -14,7 +13,7 @@
 		}
 	}
 
-	$(function() {
+	jQuery(function($) {
 		var $sections = $(CONFIG.selectors.sections)
 
 		$sections.hide()
