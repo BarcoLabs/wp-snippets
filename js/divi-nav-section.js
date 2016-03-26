@@ -29,7 +29,12 @@
 			else
 				title = $section.text()
 
-			var hash = title.replace(/[^a-z0-9]/, '-')
+			var hash = title
+						.toLowerCase()
+						.replace(/[^a-z0-9]/, '-')
+						.replace(/\-+/, '-')
+						.replace(/^-/, '')
+						.replace(/-$/, '')
 
 			$section.data('hash', '#' + hash)
 					.data('title', title)
@@ -39,7 +44,7 @@
 		$sections.each(function() {
 			var $section = $(this)
 			$('<a>')
-			.text($section.data('text'))
+			.html($section.data('title'))
 			.attr('href', $section.data('hash'))
 			.appendTo($menuContainer)
 		})
@@ -54,7 +59,7 @@
 				$sections.hide()
 				$section.show()
 				$menuContainer.find('a').removeClass('active')
-				$menuContainer.find('a[href=' + hash + ']').addClass('active')
+				$menuContainer.find('a[href="' + hash + '"]').addClass('active')
 			}
 		})
 		$(window).trigger('hashchange')
