@@ -446,10 +446,10 @@
 
 				var hash = title
 							.toLowerCase()
-							.replace(/[^a-z0-9]/, '-')
-							.replace(/\-+/, '-')
-							.replace(/^-/, '')
-							.replace(/-$/, '')
+							.replace(/[^a-z0-9]/g, '-')
+							.replace(/\-+/g, '-')
+							.replace(/^-/g, '')
+							.replace(/-$/g, '')
 
 				$section.data('hash', '#' + hash)
 						.data('title', title)
