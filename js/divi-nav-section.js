@@ -6,9 +6,9 @@
 		title: 'Title',
 		selectors: {
 			// Where the nav menu will be inserted
-			menu: '.et_pb_section.menu',
+			menu: '.menu',
 			// Macthes each section that needs to be added to the nav menu
-			sections: '.et_pb_section:not(.menu)',
+			sections: '.et_pb_section:not(.et_pb_section_0)',
 			// Matches the title that will be given to a section INSIDE A SECTION
 			title: '.title'
 		}
@@ -18,16 +18,19 @@
 		var $sections = $(CONFIG.selectors.sections)
 
 		$sections.hide()
-		$sections.each(function() {
+		$sections = $sections.filter(function(idx) {
 			var $section = $(this);
 			var $title = $section.find(CONFIG.selectors.title)
 
-			var title = ''
+			if ($title.length <= 0) {
+				console.error('Section ' + idx + ' has not a title section. Ignoring and WILL BE ALWAYS SHOWN')
+				$section.show()
+				return false
+			}
 
-			if ($title.length > 0)
-				title = $title.text().trim()
-			else
-				title = $section.text()
+			var title = $title
+						.text()
+						.trim()
 
 			var hash = title
 						.toLowerCase()
@@ -38,6 +41,7 @@
 
 			$section.data('hash', '#' + hash)
 					.data('title', title)
+			return true;
 		})
 		
 		var $menuContainer = $(CONFIG.selectors.menu)
