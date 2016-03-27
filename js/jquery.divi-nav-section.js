@@ -65,6 +65,10 @@
 				$menuContainer.find('a[href="' + hash + '"]').addClass('active')
 			}
 		})
-		$(window).trigger('hashchange')
+
+		if (window.location.hash && window.location.hash.length > 0)
+			$(window).trigger('hashchange')
+		else
+			$sections.first().show();
 	})
 })()
