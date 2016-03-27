@@ -83,7 +83,7 @@
 
 
 	// module
-	exports.push([module.id, "#lean_overlay {\r\n    position: fixed;\r\n    z-index:100;\r\n    top: 0px;\r\n    left: 0px;\r\n    height:100%;\r\n    width:100%;\r\n    background: #000;\r\n    display: none;\r\n}", ""]);
+	exports.push([module.id, "#lean_overlay {\n    position: fixed;\n    z-index:100;\n    top: 0px;\n    left: 0px;\n    height:100%;\n    width:100%;\n    background: #000;\n    display: none;\n}", ""]);
 
 	// exports
 
