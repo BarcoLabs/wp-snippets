@@ -1,0 +1,7 @@
+.et_search_outer {
+	pointer-events: none;
+}
+
+.et-search-form {
+	pointer-events: all;
+}

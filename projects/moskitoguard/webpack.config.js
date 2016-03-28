@@ -1,12 +1,15 @@
+var path = require('path')
+var webpack = require('webpack')
+
 module.exports = {
-    entry: require('path').join(__dirname, "./entry.js"),
+    entry: path.join(__dirname, "./entry.js"),
     output: {
         path: __dirname,
-        filename: "bundle.js"
+        filename: 'bundle.js'
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" }
+            { test: /\.css$/, loader: 'style!css' }
         ]
     }
 }
