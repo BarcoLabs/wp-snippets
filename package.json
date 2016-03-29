@@ -2,9 +2,6 @@
   "name": "wp-snippets",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "start": "webpack --config ./projects/moskitoguard/webpack.config.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BarcoLabs/wp-snippets.git"

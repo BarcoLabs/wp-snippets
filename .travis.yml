@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- 4.2
+script: bash ./deploy.sh
+env:
+  global:
+    - GH_REF: github.com/BarcoLabs/wp-snippets.git
+    - secure: cXMHjz9sx3V61AajSh8o2/hazCD08zFM+IViVRe7DX/8vKb1CzDODQSeCHoM3TVbQks+FwwEo1gc870+otv8isQE5f6qHfHbrnYv24d1minHTQ469DmgdYQHzj+qp+I+PuZxxlgoq3ffG2wEzSozDxLmhB7Cdr/d9RZ8m+eZHdyoy3qLDDMsOgIal+MQy92NVN2P66ZhUp+/ZWXRdGwJntXtet2uGngaK7uvnKT8hFloWc5jq43/NRa8l4BmHVqNt9MNUuHoe+Xc3ucKJY3zv7kMjp/XYEglMDKn6vR/F6B7grZgkuhVDAg6SJ+ze0/kJWG6V1q1biYbR4LXE709y9neJnihIyTENMBgW4AXjftTk/cD0G4CS9UhrdBZSGPsXGItif0oSrFLx8OaQLBTPOuf+Kh2yNISNDKa9NVwLHAMZZB3Jt9B+sH8ib5NeASDIOySzJwS8LLXUNPba8W0QKwIfc+RWTIMYokLoq14mJj36WT5JkG4f1BX1oGPDmMUm1nSmIeO9xAM5YRuQQ13fazGH2GgjJR7rQYdGoUuBdhJNp4OnqWLgx5KTQAOAzNs7bHkjHW1nm7o4/9j7jqjIhx6uBWBfNs1ZT6tDuZNpN1ewIieUzXnLYa+dQJUufQVKvOt4jBhn1TINi2gMXZKDBVK8TxGBN2Ay123nj5UM10=
