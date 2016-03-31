@@ -8,6 +8,7 @@ jQuery(function($) {
 	var cursor = 'url(http://barcolabs.com:8081/wp-content/uploads/2016/03/moskito@125x.png),auto'
 	$('body, a').css('cursor', cursor)
 	$('.parallax').parallax()
-	$('.filter-table').filterTable('.drugstore-table')
+	$('.filter-table input[type="submit"]').remove()
+	$('.filter-table input').filterTable('.drugstore-table', '.drugstore-no-result')
 	$('a[href^="#modal"]').leanModal()
 })
