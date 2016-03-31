@@ -1,3 +1,5 @@
+var queryparams = require('./utils/queryparams')
+
 jQuery(function($) {
 
 	$.fn.filterTable = function(tableSelector, noResultsSelector) {
@@ -23,6 +25,12 @@ jQuery(function($) {
 			$empty.toggle(!anyRowMatched)
 
 		})
+
+		var query = queryparams(window.location.search.substring(1))
+		if (query.q && query.q.length > 0) {
+			self.val(query.q)
+			self.trigger('input')
+		}
 	}
 
 })
