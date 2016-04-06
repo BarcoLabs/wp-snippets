@@ -1,8 +1,10 @@
 require('../../css/jquery.modal.css')
+require('../../css/jquery.secondary-footer.css')
 require('./style.css')
 require('../../js/jquery.modal.js')
 require('../../js/jquery.parallax.js')
-require('../../js/jquery.filterTable.js')
+require('../../js/jquery.secondary-footer.js')
+require('../../js/jquery.filter-table.js')
 require('../../js/jquery.divi-nav-section.js')
 jQuery(function($) {
 	var cursor = 'url(http://barcolabs.com:8081/wp-content/uploads/2016/03/moskito@125x.png),auto'
@@ -11,4 +13,5 @@ jQuery(function($) {
 	$('.filter-table input[type="submit"]').remove()
 	$('.filter-table input').filterTable('.drugstore-table', '.drugstore-no-result')
 	$('a[href^="#modal"]').leanModal()
+	$('#main-footer').secondaryFooter('Utilice los biocidas de forma segura. Lea siempre la etiqueta y la información sobre el producto antes de usarlo')
 })
