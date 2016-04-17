@@ -14,4 +14,5 @@ jQuery(function($) {
 	$('.filter-table input').filterTable('.drugstore-table', '.drugstore-no-result')
 	$('a[href^="#modal"]').leanModal()
 	$('#main-footer').secondaryFooter('Utilice los biocidas de forma segura. Lea siempre la etiqueta y la información sobre el producto antes de usarlo')
+	$('#menu-footer.menu').addClass('bottom-nav')
 })
