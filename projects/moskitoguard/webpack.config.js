@@ -9,6 +9,7 @@ module.exports = {
     },
     module: {
         loaders: [
+            { test: /\.html$/, loader: 'html' },
             { test: /\.css$/, loader: 'style!css' }
         ]
     }
