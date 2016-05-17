@@ -2,7 +2,7 @@ var queryparams = require('./utils/queryparams')
 
 jQuery(function($) {
 
-	$.fn.filterTable = function(tableSelector, noResultsSelector) {
+	$.fn.filterTable = function(tableSelector, tdFilterSelector, noResultsSelector) {
 		var self = this;
 		var $table = $(tableSelector)
 		var $empty = $(noResultsSelector)
@@ -15,8 +15,7 @@ jQuery(function($) {
 
 			$rows.each(function(idx, row) {
 				var $row = $(row)
-				var containsVal = $row.text().toLowerCase()
-									.indexOf(val) >= 0
+				var containsVal = $row.find(tdFilterSelector).text().toLowerCase().indexOf(val) >= 0
 				$row.toggle(containsVal)
 				anyRowMatched = anyRowMatched || containsVal
 			})

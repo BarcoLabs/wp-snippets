@@ -11,7 +11,7 @@ jQuery(function($) {
 	$('body, a').css('cursor', cursor)
 	$('.parallax').parallax()
 	$('.filter-table input[type="submit"]').remove()
-	$('.filter-table input').filterTable('.drugstore-table', '.drugstore-no-result')
+	$('.filter-table input').filterTable('.drugstore-table', 'td:nth-child(2), td:nth-child(4), td:nth-child(5)', '.drugstore-no-result')
 	$('a[href^="#modal"]').leanModal()
 	$('#main-footer').secondaryFooter('Utilice los biocidas de forma segura. Lea siempre la etiqueta y la información sobre el producto antes de usarlo')
 	$('#menu-footer.menu').addClass('bottom-nav')
