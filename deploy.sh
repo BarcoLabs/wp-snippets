@@ -7,7 +7,7 @@ rm -rf projects/*/bundles.js || exit 0;
 BUILD=$(./compile.sh)
 
 echo 
-echo $BUILD
+echo "$BUILD"
 echo
 
 cd projects
