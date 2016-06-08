@@ -21,7 +21,7 @@ jQuery(function($) {
 		var originalHtml = this.html()
 
 		var _replace = function(argument) {
-			return replace(originalHtml, config.matchers, config.replaces[idx++])
+			return replace(originalHtml, config.matchers, config.replaces[idx++ % config.replaces.length])
 		}
 
 		var triggerReplace = function(instant) {

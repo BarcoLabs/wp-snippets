@@ -6,7 +6,7 @@ jQuery(function($) {
     $('.piko-top-menu .piko-address:nth(1)').rgxReplacer({
 		matchers: {
 			title: /Horario/,
-			hours: /L-V 9h\.-13h\. \| 17h\. - 20h\./
+			hours: /L\-V 9h\.\-13h\. \| 17h\. \- 20h\./
 		},
 		replaces: [
 			{
