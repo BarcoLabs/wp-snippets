@@ -10,11 +10,11 @@ jQuery(function($) {
 		},
 		replaces: [
 			{
-				title: 'Horaio Oficina',
+				title: 'Horario Oficina',
 				hours: 'L-V 9h.-13h. | 17h.-20h.'
 			},
 			{
-				title: 'Horaio Laboratorio',
+				title: 'Horario Laboratorio',
 				hours: 'L-V 8h.-14h. | 15h.-18h.'
 			}
 		]
