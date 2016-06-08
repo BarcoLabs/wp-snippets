@@ -1,7 +1,8 @@
  jQuery(function($) {
     $.fn.clickableRow = function() {
-        this.click(function() {
-            window.document.location = this.data('url');
+        var self = this;
+        self.click(function() {
+            window.document.location = self.data('url');
         })
     }
 })
