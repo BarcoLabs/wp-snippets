@@ -2,7 +2,7 @@
     $.fn.clickableRow = function() {
         var self = this;
         self.click(function() {
-            window.document.location = self.data('url');
+            window.document.location = this.data('url');
         })
     }
 })
