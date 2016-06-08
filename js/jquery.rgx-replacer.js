@@ -25,17 +25,18 @@ jQuery(function($) {
 		}
 
 		var triggerReplace = function(instant) {
-			if (instant === true)
-				return self.html(_replace())
+			if (instant !== true) {
+				self.fadeOut(function() {
+					self
+					.html(_replace())
+					.fadeIn()
+				})
+			} else 
+				self.html(_replace())
 
-			self.fadeOut(function() {
-				self
-				.html(_replace())
-				.fadeIn()
-			})
+			setTimeout(triggerReplace, 5000)
 		}
 
-		setTimeout(triggerReplace, 5000)
 		triggerReplace(true)
 	}
 
