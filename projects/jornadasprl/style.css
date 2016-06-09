@@ -1,0 +1,24 @@
+#logo_mess img {
+  position: absolute;
+  right: 0px;
+  top: 26px;
+}
+
+@media all and (max-width: 980px) {
+  #logo_mess img {
+    top: 10px;
+    max-height: 60px;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 725px) {
+  #logo_mess img {
+    width: auto;
+    position: static;
+  }
+
+  #main-header {
+    height: 150px;
+  }
+}
