@@ -2,7 +2,6 @@ require('../../js/jquery.clickable-row')
 require('../../js/jquery.rgx-replacer')
 require('./style.css')
 jQuery(function($) {
-    $('.clickable-row').clickableRow()
     $('.piko-top-menu .piko-address:nth(1)').rgxReplacer({
 		matchers: {
 			title: /Horario/,
