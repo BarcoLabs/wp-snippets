@@ -1,12 +1,12 @@
+#post-185 {
+  display: none !important;
+}
+
 #instalaciones-dark {
   margin-bottom: 0 !important;
   padding-bottom: 90px !important;
 }
 
 #instalaciones-light > div > div.col.col-6.col-last.home-info-section-1-content.in-viewport {
-  padding-top: 0 !important;
-}
-
-#imagensinpadding > div > div.col.col-6.col-last.home-info-section-1-content.in-viewport {
   padding-top: 0 !important;
 }
