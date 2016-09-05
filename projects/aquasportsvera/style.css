@@ -28,8 +28,10 @@
     font-size: 25px;
     margin-left: 15px;
   }
+}
 
-  #slider {
-    padding-top: 250px !important;
-  }
+@media only screen and (max-width: 767px) {
+    body #slider {
+        padding-top: 250px !important;
+    }
 }
