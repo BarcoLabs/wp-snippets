@@ -35,3 +35,10 @@
         padding-top: 250px !important;
     }
 }
+
+.breadcrumb {
+  text-align: center;
+  font-size: 1.3em;
+  color: #47B1E3;
+  font-weight: 400;
+}
