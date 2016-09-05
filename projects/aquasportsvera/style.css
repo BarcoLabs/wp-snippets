@@ -78,3 +78,22 @@ body.page-id-443 > div#page.site > div#main.site-content {
 #faq {
   margin-bottom: 0;
 }
+
+/* Fix header on some responsive range */
+@media only screen and ( min-width: 768px ) and ( max-width: 1023px) {
+  body.home #main {
+    margin-top: 0 !important;
+  }
+
+  body.home .slider-slide {
+    height: 600px;
+  }
+
+  body.home .slider-slide-image-mobile {
+    display: block !important;;
+  }
+
+  body.home .slider-slide-image {
+    display: none;
+  }
+}
