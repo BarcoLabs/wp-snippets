@@ -5,7 +5,7 @@ jQuery(function($) {
   $('#directionsPanel').text("Placeholder for directions.")
 
   // Switch Sponsors & Faq's position.
-  var sponsorsDiv = ($('#partners')).detach();
-  ($('#faq')).append(sponsorsDiv);
+  var faqDiv = ($('#faq')).detach();
+  ($('#partners')).append(faqDiv);
 
 })
