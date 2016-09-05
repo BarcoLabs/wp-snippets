@@ -28,4 +28,8 @@
     font-size: 25px;
     margin-left: 15px;
   }
+
+  #slider {
+    padding-top: 250px;
+  }
 }
