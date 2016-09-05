@@ -8,4 +8,6 @@ jQuery(function($) {
   var faqDiv = $('#faq').detach();
   $('#partners').append(faqDiv);
 
+  $('#promo > iframe').height() = $('body > video').height()
+
 })
