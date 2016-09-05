@@ -23,4 +23,8 @@
   #header-social > a {
     font-size: 25px;
   }
+
+  #header-social > span.header-search-mobile-nav-hook {
+    font-size: 25px;
+  }
 }
