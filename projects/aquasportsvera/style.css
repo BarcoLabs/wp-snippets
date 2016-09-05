@@ -62,3 +62,7 @@
 body.page-id-92 > div#page.site > div#main.site-content {
   background-color: #2E546A;
 }
+
+#telephone > span {
+  position: relative;
+}
