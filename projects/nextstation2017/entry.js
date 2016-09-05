@@ -7,7 +7,4 @@ jQuery(function($) {
   // Switch Sponsors & Faq's position.
   var faqDiv = $('#faq').detach();
   $('#partners').append(faqDiv);
-
-  $('#promo > iframe').height() = $('body > video').height()
-
 })
