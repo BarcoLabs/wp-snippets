@@ -6,6 +6,6 @@ jQuery(function($) {
 
   // Switch Sponsors & Faq's position
   var sponsorsDiv = ($('#partners')).detach();
-  ($('#faq')).append(div2);
-  
+  ($('#faq')).append(sponsorsDiv);
+
 })
