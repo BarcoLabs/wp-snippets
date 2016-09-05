@@ -1,3 +1,7 @@
 #venues > div.col-md-4.col-sm-12.column.directions-input {
     display: none;
 }
+
+#schedule > div > div.section.clearfix > header > h2 {
+    margin-bottom: 25px;
+}
