@@ -15,4 +15,8 @@
   #telephone {
     display: none;
   }
+
+  #logo > a > img {
+    width: 50%;
+  }
 }
