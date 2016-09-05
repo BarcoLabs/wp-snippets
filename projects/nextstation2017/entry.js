@@ -4,7 +4,7 @@ jQuery(function($) {
   $('#venues > div.col-md-3.col-md-7.col-sm-12.column').removeClass('col-md-3')
   $('#directionsPanel').text("Placeholder for directions.")
 
-  // Switch Sponsors & Faq's position
+  // Switch Sponsors & Faq's position.
   var sponsorsDiv = ($('#partners')).detach();
   ($('#faq')).append(sponsorsDiv);
 
