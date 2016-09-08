@@ -1,0 +1,5 @@
+@media only screen and (min-width: 981px) {
+    #et_top_search {
+        display: none;
+    }
+}

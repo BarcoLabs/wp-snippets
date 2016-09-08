@@ -5,4 +5,5 @@ node_modules/.bin/webpack --config "./projects/bioservicios/webpack.config.js" -
 node_modules/.bin/webpack --config "./projects/jornadasprl/webpack.config.js" --color=false
 node_modules/.bin/webpack --config "./projects/aquasportsvera/webpack.config.js" --color=false
 node_modules/.bin/webpack --config "./projects/nextstation2017/webpack.config.js" --color=false
+node_modules/.bin/webpack --config "./projects/nextstation2017v2/webpack.config.js" --color=false
 
