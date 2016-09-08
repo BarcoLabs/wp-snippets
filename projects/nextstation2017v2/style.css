@@ -3,3 +3,7 @@
         display: none;
     }
 }
+
+#lang_sel {
+    float: right;
+}
