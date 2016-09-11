@@ -19,7 +19,7 @@
 }
 @media screen and (max-width: 768px){ /*change device breakpoint here depending on the number of tabs you have*/
   .ecustom-tabs .et_pb_tabs_controls li {
-    width: 100%; 
+    width: 100% !important; 
     text-align: center;
   }
 }
