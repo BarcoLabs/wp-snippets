@@ -7,3 +7,19 @@
 #lang_sel {
     float: right !important;
 }
+
+.custom-tabs {
+
+}
+
+/*---------- [Equalise the Tabs] ----------*/
+.custom-tabs .et_pb_tabs_controls li {
+    width: 25%; /*change width of tabs here depending on the number of tabs you have*/
+    text-align: center;
+}
+@media screen and (max-width: 768px){ /*change device breakpoint here depending on the number of tabs you have*/
+  .ecustom-tabs .et_pb_tabs_controls li {
+    width: 100%; 
+    text-align: center;
+  }
+}
