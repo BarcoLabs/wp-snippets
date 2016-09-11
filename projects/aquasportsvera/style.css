@@ -8,7 +8,7 @@
 }
 
 #slider-container > div.slider-nav {
-  display: none;
+  display: none !important;
 }
 
 #post-185 {
