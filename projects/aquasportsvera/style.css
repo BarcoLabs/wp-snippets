@@ -1,3 +1,7 @@
+#slider-container > div.slider-nav {
+  display: none;
+}
+
 #post-185 {
   display: none !important;
 }

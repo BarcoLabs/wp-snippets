@@ -5,5 +5,5 @@
 }
 
 #lang_sel {
-    float: right;
+    float: right !important;
 }
