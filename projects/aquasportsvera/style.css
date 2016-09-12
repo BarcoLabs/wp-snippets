@@ -9,6 +9,7 @@
 .form-custom-input {
   margin-left: 2em;
   padding: 10px !important;
+  width: 20em;
 }
 
 .form-custom-label {
