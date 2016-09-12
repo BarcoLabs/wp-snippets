@@ -2,6 +2,10 @@
   padding: 2em;
 }
 
+.form-custom-field {
+  margin-bottom: 1em;
+}
+
 .form-custom-input {
   margin-left: 2em;
   padding: 10px !important;
