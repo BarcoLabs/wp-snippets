@@ -2,6 +2,14 @@
   color: #E84E69;
 }
 
+.cta-button button-span-1 {
+  background-color: #E84E69 !important;
+}
+
+.cta-button button-span-2 {
+  background-color: #ca445b !important;
+}
+
 #post-102 > p > img {
   border: 6px solid #47B1E3;
 }
