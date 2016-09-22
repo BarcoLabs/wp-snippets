@@ -13,6 +13,6 @@ jQuery(function($) {
   $('.slider-slide-actions a').addClass('secondary cta-button')
   $('.slider-slide-actions a').removeClass('transparent')
   $('#actividades-dirigidas > div > div.col.col-6.col-last.home-info-section-1-content.in-viewport > a').attr('target', '_BLANK')
-  $("h4:contains('img-cta')").html('<img src="http://aquasportsvera-es.alcandora.com/wp-content/uploads/2016/09/piscinagym.png"/>')
+  $("h4:contains('img-cta')").html('<img src="http://aquasportsvera.es/wp-content/uploads/2016/09/piscinagym.png"/>')
 })
 
