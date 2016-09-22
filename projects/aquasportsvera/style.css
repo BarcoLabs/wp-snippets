@@ -1,3 +1,9 @@
+/* Remove this once Barbara gives the go-ahead */
+#main > div.home-classes-schedule {
+  display: none !important;
+}
+/* Remove this once Barbara gives the go-ahead */
+
 .cta-button {
   color: #E84E69;
 }
