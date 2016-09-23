@@ -6,9 +6,16 @@ jQuery(function($) {
   $('#faq > div > div').removeClass('col-6')
   // Subscription popup stuff
   var $popupSub = $('#popup-subscription.home-custom')
-  $popupSub.click(function() { $popupSub.hide() })
+  var hidePopupSub = function() {
+      $popupSub.fadeOut(function() {
+        $popupSub.find('.success').hide()
+        $popupSub.find('.signup').show()
+      })
+  }
+  $popupSub.click(function() { $popupSub.fadeOut() })
+  $popupSub.find('.close').click(function(e) { $popupSub.fadeOut() })
   $popupSub.find('> * ').click(function(e) { e.stopPropagation() })
-  $('.slider-slide-actions a').click(function() { $popupSub.toggle() })
+  $('.slider-slide-actions a').click(function() { $popupSub.fadeToggle() })
   // -- Subscription popup stuff
   $('.slider-slide-actions a').addClass('secondary cta-button')
   $('.slider-slide-actions a').removeClass('transparent')
